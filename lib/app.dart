@@ -3,14 +3,27 @@ import 'package:flutter_bloc_boilerplate/routes/routes.dart';
 import 'package:flutter_bloc_boilerplate/theme/theme.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
+  @override
+  _AppState createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  final _appRouter = AppRoutes();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'flutter flutter_bloc boilerplate',
       theme: ThemeConfig.lightTheme,
-      onGenerateRoute: AppRoutes().routes,
+      onGenerateRoute: _appRouter.routes,
       builder: EasyLoading.init(),
     );
+  }
+
+  @override
+  void dispose() {
+    _appRouter.dispose();
+    super.dispose();
   }
 }

@@ -4,7 +4,10 @@ import 'package:flutter_bloc_boilerplate/routes/routes.dart';
 import 'i_app_route.dart';
 
 class HomeRoutes implements IAppRoute {
-  static final String name = RoutePath.home;
+  static final String key = RoutePath.home;
+
+  @override
+  List<String> names = [RoutePath.home];
 
   @override
   Route routes(RouteSettings settings) {

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc_boilerplate/blocs/auth/auth.dart';
+import 'package:flutter_bloc_boilerplate/modules/modules.dart';
 import 'package:flutter_bloc_boilerplate/routes/app_routes_factory.dart';
 import 'package:flutter_bloc_boilerplate/routes/route_path.dart';
 import 'package:flutter_bloc_boilerplate/routes/routes.dart';
 
 class AppRoutes {
-  AppRoutesFactory _appRoutesFactory;
   static final AppRoutes _singleton = new AppRoutes._internal();
 
   factory AppRoutes() {
@@ -12,25 +14,32 @@ class AppRoutes {
   }
 
   AppRoutes._internal() {
+    // AuthBloc act as a global bloc use
+    _authBloc = new AuthBloc();
+
     _appRoutesFactory = new AppRoutesFactory();
-    _appRoutesFactory.registerRoutes(AuthRoutes.name, new AuthRoutes());
+    _appRoutesFactory.registerRoutes(AuthRoutes.key, new AuthRoutes());
+
+    print('AppRoutes._internal()');
   }
+
+  AppRoutesFactory _appRoutesFactory;
+  AuthBloc _authBloc;
 
   Route routes(RouteSettings settings) {
     if (settings.name == RoutePath.root) {
-      return null;
+      return MaterialPageRoute(
+        builder: (_) => BlocProvider.value(
+          value: _authBloc,
+          child: SplashScreen(),
+        ),
+      );
     }
 
     return _appRoutesFactory.routes(settings);
-    // switch (settings.name) {
-    //   case RoutePath.root:
-    //     return null;
-    //   case RoutePath.auth:
-    //   case RoutePath.login:
-    //   case RoutePath.register:
-    //     return AuthRoutes.routes(settings);
-    //   default:
-    //     return null;
-    // }
+  }
+
+  void dispose() {
+    _authBloc.close();
   }
 }
