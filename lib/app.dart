@@ -9,7 +9,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'flutter flutter_bloc boilerplate',
       theme: ThemeConfig.lightTheme,
-      onGenerateRoute: AppRoutes.routes,
+      onGenerateRoute: AppRoutes().routes,
       builder: EasyLoading.init(),
     );
   }
