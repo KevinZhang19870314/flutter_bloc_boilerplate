@@ -1,24 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="21px" height="19px" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" version="1.1"><rect id="backgroundrect" width="21" height="19" x="0" y="0" fill="none" stroke="none"/>
     <title>icon_home</title>
     <defs>
         <linearGradient x1="16.3577561%" y1="0%" x2="84.8158356%" y2="95.1982491%" id="linearGradient-1">
-            <stop stop-color="#82DCFF" offset="0%"></stop>
-            <stop stop-color="#1ED69D" offset="100%"></stop>
+            <stop stop-color="#82DCFF" offset="0%"/>
+            <stop stop-color="#1ED69D" offset="100%"/>
         </linearGradient>
     </defs>
-    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home" transform="translate(-35.000000, -850.000000)">
-            <g id="Home导航" transform="translate(0.000000, 817.000000)">
-                <g id="item1备份" transform="translate(26.795277, 29.960000)">
-                    <g id="icon_home" transform="translate(9.277590, 3.820000)">
-                        <polygon id="路径-2" fill="url(#linearGradient-1)" points="9.43376114 0.745642 3.24183747 7.71982734 3.24183747 16.659658 15.6256848 16.659658 15.6256848 6.863818"></polygon>
-                        <polyline id="Stroke-1" stroke="#2D2D2D" stroke-width="1.92" points="15.6256848 6.863818 15.6256848 16.659658 3.24183747 16.659658 3.24183747 6.863818"></polyline>
-                        <polyline id="Stroke-3" stroke="#2D2D2D" stroke-width="1.92" points="0.0950703614 10.108522 9.43443152 0.745642 18.659828 9.993322"></polyline>
-                        <line x1="7.40051037" y1="10.3550042" x2="11.3543879" y2="10.3550042" id="路径-3" stroke="#2D2D2D" stroke-width="2"></line>
+    
+<g class="currentLayer" style=""><title>Layer 1</title><g id="页面-1" stroke="none" stroke-width="1" fill="#ff7f00" fill-rule="evenodd" class="selected" fill-opacity="1">
+        <g id="Home" fill="#ff7f00">
+            <g id="Home导航" fill="#ff7f00">
+                <g id="item1备份" fill="#ff7f00">
+                    <g id="icon_home" fill="#ff7f00">
+                        <polygon id="路径-2" fill="#ff7f00" points="10.506628036499023,1.525665521621704 4.314702987670898,8.499847650527954 4.314702987670898,17.439666986465454 16.698551177978516,17.439666986465454 16.698551177978516,7.643829584121704 "/>
+                        <polyline id="Stroke-1" stroke="#2D2D2D" stroke-width="1.92" points="16.698551177978516,7.643829584121704 16.698551177978516,17.439666986465454 4.314702987670898,17.439666986465454 4.314702987670898,7.643829584121704 " fill="#ff7f00"/>
+                        <polyline id="Stroke-3" stroke="#2D2D2D" stroke-width="1.92" points="1.1679363250732422,10.888519525527954 10.507299423217773,1.525665521621704 19.732694625854492,10.773346185684204 " fill="#ff7f00"/>
+                        <line x1="8.473376750946045" y1="11.135003328323364" x2="12.427254676818848" y2="11.135003328323364" id="路径-3" stroke="#2D2D2D" stroke-width="2"/>
                     </g>
                 </g>
             </g>
         </g>
-    </g>
-</svg>
+    </g></g></svg>

@@ -24,8 +24,8 @@ class BorderButton extends StatelessWidget {
           gradient: gradient ??
               LinearGradient(
                 colors: [
-                  hexToColor('#405FA3'),
-                  hexToColor('#1ED69D'),
+                  ColorConstants.darkOrange,
+                  ColorConstants.lightOrange,
                 ],
               ),
         ),
@@ -59,7 +59,7 @@ class BorderButton extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: hexToColor('#2F9AA0'),
+                      color: ColorConstants.darkOrange,
                     ),
                   )
                 else

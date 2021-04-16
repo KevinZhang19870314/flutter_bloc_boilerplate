@@ -47,8 +47,8 @@ class GradientBackground extends StatelessWidget {
               end: Alignment.bottomRight,
               stops: [0.1, 0.9],
               colors: [
-                hexToColor('#405FA3'),
-                hexToColor('#1ED69D'),
+                ColorConstants.darkOrange,
+                ColorConstants.lightOrange,
               ],
             ),
           ),
@@ -61,10 +61,10 @@ class GradientBackground extends StatelessWidget {
             child: WaveWidget(
               config: CustomConfig(
                 gradients: [
-                  [hexToColor('#2BA99F'), hexToColor('#22CC9E')],
-                  [hexToColor('#2BA99F'), hexToColor('#3BCDAD')],
-                  [hexToColor('#3CC8AE'), hexToColor('#22C69E')],
-                  [hexToColor('#55D5B1'), hexToColor('#54D9B1')]
+                  [ColorConstants.darkOrange, ColorConstants.lightOrange],
+                  [ColorConstants.darkOrange, hexToColor('#FFD4AA')],
+                  [ColorConstants.lightOrange, hexToColor('#FFD4AA')],
+                  [hexToColor('#FF2A00'), hexToColor('#FFD4AA')]
                 ],
                 durations: [35000, 19440, 10800, 6000],
                 heightPercentages: [0.20, 0.23, 0.25, 0.30],

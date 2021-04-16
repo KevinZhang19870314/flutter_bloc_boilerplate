@@ -51,7 +51,7 @@ class IconTitleItem extends StatelessWidget {
                   icon,
                   width: 25,
                   height: 25,
-                  color: ColorConstants.secondaryAppColor,
+                  color: ColorConstants.darkOrange,
                 ),
                 SizedBox(
                   width: drawablePadding,

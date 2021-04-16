@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ColorConstants {
+  static Color darkOrange = hexToColor('#FF7F00');
+  static Color lightOrange = hexToColor('#FFD47F');
   static Color lightScaffoldBackgroundColor = hexToColor('#F9F9F9');
   static Color darkScaffoldBackgroundColor = hexToColor('#2F2E2E');
   static Color secondaryAppColor = hexToColor('#22DDA6');
