@@ -47,31 +47,31 @@ The following is the project folder structure (only the folders under lib are in
 ```
 lib/
 |- api-Global Restful api requests, including request interceptors, etc.
-   |- interceptor-interceptor, including request, response, err interception
-   |- api.dart-Restful api export file
+   |- interceptor - interceptor, including request, response, err interception
+   |- api.dart - Restful api export file
 |- blocs-BLoC handles business logic
-   |- auth-The auth module handles business logic such as login & registration
-   |- home-home module loads user information, etc.
-   |- blocs.dart-BLoC export file
-|- models-Various structured entity classes, divided into request and response entities
-   |- models.dart-entity class export file
-|- modules-business module folder
-   |- auth-Login & Registration Module
-   |- home-Home module
-   |- splash-splash module
-   |- modules.dart-module export file
-|- routes-routing module 
-   |- modules-routing configuration information for each module
-      |- i_app_route.dart-abstract routing class
-   |- app_routes.dart-route name
-   |- app_routes_factory.dart-routing factory class, processing various module routing configuration
-   |- route_path.dart-route name static class
-   |- routes.dart-route export file
+   |- auth - The auth module handles business logic such as login & registration
+   |- home - home module loads user information, etc.
+   |- blocs.dart - BLoC export file
+|- models - Various structured entity classes, divided into request and response entities
+   |- models.dart - entity class export file
+|- modules - business module folder
+   |- auth - Login & Registration Module
+   |- home - Home module
+   |- splash - splash module
+   |- modules.dart - module export file
+|- routes - routing module 
+   |- modules - routing configuration information for each module
+      |- i_app_route.dart - abstract routing class
+   |- app_routes.dart - route name
+   |- app_routes_factory.dart - routing factory class, processing various module routing configuration
+   |- route_path.dart - route name static class
+   |- routes.dart - route export file
 |- Shared-Global shared folders, including static variables, global services, utils, global Widgets, etc.
-   |- shared.dart-global shared export file
-|- theme-theme folder
-|- app.dart-global app file
-|- main.dart-main entry file
+   |- shared.dart - global shared export file
+|- theme - theme folder
+|- app.dart - global app file
+|- main.dart - main entry file
 ```
 
 ## Other
