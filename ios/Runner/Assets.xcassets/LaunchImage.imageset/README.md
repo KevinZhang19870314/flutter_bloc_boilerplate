@@ -60,7 +60,7 @@ lib/
    |- home-Home module
    |- splash-splash module
    |- modules.dart-module export file
-|- routes-routing module
+|- routes-routing module 
    |- modules-routing configuration information for each module
       |- i_app_route.dart-abstract routing class
    |- app_routes.dart-route name
