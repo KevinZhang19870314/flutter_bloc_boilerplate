@@ -1,6 +1,6 @@
 # flutter_bloc_boilerplate
 
-**Language: [English](README.md), Chinese (this file).**
+**Language: English (this file), [Chinese](README.zh-cn.md).**
 
 ## Introduction
 
