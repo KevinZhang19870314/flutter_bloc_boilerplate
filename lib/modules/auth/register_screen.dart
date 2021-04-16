@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc_boilerplate/blocs/blocs.dart';
+import 'package:flutter_bloc_boilerplate/models/models.dart';
+import 'package:flutter_bloc_boilerplate/routes/routes.dart';
 import 'package:flutter_bloc_boilerplate/shared/shared.dart';
 
 class RegisterScreen extends StatelessWidget {
@@ -6,10 +10,25 @@ class RegisterScreen extends StatelessWidget {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
-  bool _termsChecked = false;
 
   @override
   Widget build(BuildContext context) {
+    return BlocListener<AuthBloc, AuthState>(
+      bloc: BlocProvider.of<AuthBloc>(context),
+      listener: (context, state) {
+        if (state is AuthRegisterSuccessState) {
+          Navigator.pushNamed(context, RoutePath.home);
+        }
+
+        if (state is AuthRegisterFailState) {
+          CommonWidget.toast(state.message);
+        }
+      },
+      child: _buildWidget(context),
+    );
+  }
+
+  Widget _buildWidget(BuildContext context) {
     return Stack(
       children: [
         GradientBackground(),
@@ -32,6 +51,7 @@ class RegisterScreen extends StatelessWidget {
   }
 
   Widget _buildForms(BuildContext context) {
+    bool _termsChecked = false;
     return Form(
       key: _formKey,
       child: SingleChildScrollView(
@@ -106,7 +126,22 @@ class RegisterScreen extends StatelessWidget {
               text: 'Sign Up',
               backgroundColor: Colors.white,
               onPressed: () {
-                // controller.register(context);
+                AppFocus.unfocus(context);
+                if (_formKey.currentState.validate()) {
+                  if (!_termsChecked) {
+                    CommonWidget.toast('Please check the terms first.');
+                    return;
+                  }
+
+                  BlocProvider.of<AuthBloc>(context).add(
+                    AuthRegisterEvent(
+                      registerRequest: RegisterRequest(
+                        email: _emailController.text,
+                        password: _passwordController.text,
+                      ),
+                    ),
+                  );
+                }
               },
             ),
           ],

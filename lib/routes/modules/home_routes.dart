@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc_boilerplate/blocs/home/home.dart';
+import 'package:flutter_bloc_boilerplate/modules/modules.dart';
 import 'package:flutter_bloc_boilerplate/routes/routes.dart';
 
 import 'i_app_route.dart';
 
 class HomeRoutes implements IAppRoute {
   static final String key = RoutePath.home;
+  final HomeBloc _homeBloc = new HomeBloc();
 
   @override
   List<String> names = [RoutePath.home];
@@ -13,10 +17,16 @@ class HomeRoutes implements IAppRoute {
   Route routes(RouteSettings settings) {
     switch (settings.name) {
       case RoutePath.home:
-        return null;
-        break;
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider.value(
+            value: _homeBloc,
+            child: HomeScreen(),
+          ),
+        );
       default:
-        return null;
+        return MaterialPageRoute(
+          builder: (_) => AuthScreen(),
+        );
     }
   }
 }

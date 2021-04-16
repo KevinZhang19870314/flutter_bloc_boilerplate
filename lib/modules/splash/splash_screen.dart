@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_boilerplate/blocs/auth/auth.dart';
+import 'package:flutter_bloc_boilerplate/blocs/blocs.dart';
 import 'package:flutter_bloc_boilerplate/routes/routes.dart';
 import 'package:flutter_bloc_boilerplate/shared/shared.dart';
 
@@ -10,12 +10,9 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  AuthBloc _authBloc;
-
   @override
   void initState() {
-    _authBloc = BlocProvider.of<AuthBloc>(context);
-    _authBloc.add(AuthAppInitEvent());
+    BlocProvider.of<AuthBloc>(context).add(AuthAppInitEvent());
     super.initState();
   }
 
@@ -28,6 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
       listener: (context, state) {
         if (state is AuthSuccessState) {
           print('AuthSuccessState');
+          Navigator.pushNamed(context, RoutePath.home);
         }
 
         if (state is AuthFailState) {

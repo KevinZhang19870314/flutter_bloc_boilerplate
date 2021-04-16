@@ -13,6 +13,7 @@ class ApiProvider {
 
   ApiProvider._internal() {
     dio
+      ..options.baseUrl = 'https://reqres.in'
       ..options.receiveTimeout = 15000
       ..options.responseType = ResponseType.json
       ..interceptors.add(ApiInterceptors())

@@ -27,7 +27,9 @@ class AuthRoutes implements IAppRoute {
           builder: (_) => RegisterScreen(),
         );
       default:
-        return null;
+        return MaterialPageRoute(
+          builder: (_) => AuthScreen(),
+        );
     }
   }
 }
