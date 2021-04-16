@@ -46,7 +46,7 @@ The following is the project folder structure (only the folders under lib are in
 
 ```
 lib/
-|- api-Global Restful api requests, including request interceptors, etc.
+|- api - Global Restful api requests, including request interceptors, etc.
    |- interceptor - interceptor, including request, response, err interception
    |- api.dart - Restful api export file
 |- blocs - BLoC handles business logic
