@@ -11,11 +11,11 @@ During my study of Flutter, I have been using the flutter_bloc state management 
 Use Flutter 2.x to build a set of frameworks containing predefined folder structure, style themes, API access, state management, routing & dependencies, etc. The project structure is clear, and it can be easily used as a Flutter template project. Technologies used include but are not limited to [Flutter](https://flutter.cn/), [Dart](https://dart.dev/), [flutter_bloc](https://pub.dev/packages/flutter_bloc) Wait.
 
 <p align='center'>
-    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/master/assets/screenshot/2.jpg" width="187" heght="333" />
-    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/master/assets/screenshot/3.jpg" width="187" heght="333" />
-    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/master/assets/screenshot/4.jpg" width="187" heght="333" />
-    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/master/assets/screenshot/5.jpg" width="187" heght="333" />
-    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/master/assets/screenshot/6.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/2.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/3.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/4.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/5.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/6.jpg" width="187" heght="333" />
 </p>
 
 ## Installation & Use
