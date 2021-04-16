@@ -49,7 +49,7 @@ lib/
 |- api-Global Restful api requests, including request interceptors, etc.
    |- interceptor - interceptor, including request, response, err interception
    |- api.dart - Restful api export file
-|- blocs-BLoC handles business logic
+|- blocs - BLoC handles business logic
    |- auth - The auth module handles business logic such as login & registration
    |- home - home module loads user information, etc.
    |- blocs.dart - BLoC export file
