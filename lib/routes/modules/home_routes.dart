@@ -18,6 +18,7 @@ class HomeRoutes implements IAppRoute {
     switch (settings.name) {
       case RoutePath.home:
         return MaterialPageRoute(
+          settings: settings,
           builder: (_) => BlocProvider.value(
             value: _homeBloc,
             child: HomeScreen(),
@@ -25,6 +26,7 @@ class HomeRoutes implements IAppRoute {
         );
       default:
         return MaterialPageRoute(
+          settings: settings,
           builder: (_) => AuthScreen(),
         );
     }

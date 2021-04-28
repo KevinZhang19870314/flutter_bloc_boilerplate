@@ -182,9 +182,11 @@ class _MeTabState extends State<MeTab> {
                 height: 20,
               ),
               IconTitleItem(
-                title: 'Discover',
+                title: 'Cards',
                 icon: 'assets/svgs/icon_discover.svg',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, RoutePath.cards);
+                },
               ),
               IconTitleItem(
                 title: 'Resource',

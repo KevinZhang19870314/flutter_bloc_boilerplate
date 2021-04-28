@@ -16,18 +16,22 @@ class AuthRoutes implements IAppRoute {
     switch (settings.name) {
       case RoutePath.auth:
         return MaterialPageRoute(
+          settings: settings,
           builder: (_) => AuthScreen(),
         );
       case RoutePath.login:
         return MaterialPageRoute(
+          settings: settings,
           builder: (_) => LoginScreen(),
         );
       case RoutePath.register:
         return MaterialPageRoute(
+          settings: settings,
           builder: (_) => RegisterScreen(),
         );
       default:
         return MaterialPageRoute(
+          settings: settings,
           builder: (_) => AuthScreen(),
         );
     }
