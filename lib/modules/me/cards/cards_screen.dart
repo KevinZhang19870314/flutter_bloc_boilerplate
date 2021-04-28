@@ -53,7 +53,7 @@ class _CardsScreenState extends State<CardsScreen> {
           shrinkWrap: true,
           itemBuilder: (context, index) {
             BankCard card = cards[index];
-            return EvoFocusedMenuHolder(
+            return FocusedMenuHolder(
               child: BankCardBox(
                 cardType: card.cardBrand,
                 cardNum: card.cardNumber,

@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 
 import '../../shared.dart';
 
-class EvoFocusedMenuDetails extends StatelessWidget {
+class FocusedMenuDetails extends StatelessWidget {
   final Offset childOffset;
   final Size childSize;
   final Widget menuContent;
   final Widget child;
 
-  const EvoFocusedMenuDetails({
+  const FocusedMenuDetails({
     Key key,
     @required this.menuContent,
     @required this.childOffset,

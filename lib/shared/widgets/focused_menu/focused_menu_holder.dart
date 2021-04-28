@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'focused_menu_details.dart';
 
-class EvoFocusedMenuHolder extends StatefulWidget {
+class FocusedMenuHolder extends StatefulWidget {
   final Widget child, menuContent;
 
-  const EvoFocusedMenuHolder({
+  const FocusedMenuHolder({
     Key key,
     @required this.child,
     @required this.menuContent,
   });
 
   @override
-  _EvoFocusedMenuHolderState createState() => _EvoFocusedMenuHolderState();
+  _FocusedMenuHolderState createState() => _FocusedMenuHolderState();
 }
 
-class _EvoFocusedMenuHolderState extends State<EvoFocusedMenuHolder> {
+class _FocusedMenuHolderState extends State<FocusedMenuHolder> {
   GlobalKey containerKey = GlobalKey();
   Offset childOffset = Offset(0, 0);
   Size childSize;
@@ -44,7 +44,7 @@ class _EvoFocusedMenuHolderState extends State<EvoFocusedMenuHolder> {
               animation = Tween(begin: 0.0, end: 1.0).animate(animation);
               return FadeTransition(
                 opacity: animation,
-                child: EvoFocusedMenuDetails(
+                child: FocusedMenuDetails(
                   menuContent: widget.menuContent,
                   child: widget.child,
                   childOffset: childOffset,
