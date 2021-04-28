@@ -16,6 +16,8 @@ Use Flutter 2.x to build a set of frameworks containing predefined folder struct
     <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/4.jpg" width="187" heght="333" />
     <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/5.jpg" width="187" heght="333" />
     <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/6.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/cards.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/flutter_bloc_boilerplate/blob/main/assets/screenshot/cards_popup.jpg" width="187" heght="333" />
 </p>
 
 ## Installation & Use
