@@ -8,6 +8,8 @@
 
 ## 技术 & 项目介绍
 
+[Flutter - flutter_bloc状态管理](https://juejin.cn/post/6952069411096248350)
+
 使用Flutter 2.x搭建的一套包含预定义的文件夹结构、样式主题、API访问、状态管理、路由 & 依赖等的框架。项目结构清晰，可以很方便的作为Flutter的模板项目来使用。使用技术包括但不限于[Flutter](https://flutter.cn/)、[Dart](https://dart.dev/)、[flutter_bloc](https://pub.dev/packages/flutter_bloc)等。
 
 <p align='center'>
